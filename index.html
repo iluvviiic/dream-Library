@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+
+        <img
+            src="img/biblioteca.jpg"
+            class="biblioteca"
+            alt="Estanterías de una biblioteca"
+        >
+
+        <div class="fondo"></div>
+
+        <nav>
+            <a href="#inicio">Librería Virtual</a>
+            <a href="paginas/informacion.html">Información</a>
+            <a href="paginas/socios.html">Socios</a>
+            <a href="paginas/administracion.html">Administración</a>
+        </nav>
+
+        <div class="contenido">
+            <h1>Dream Library</h1>
+
+            <p>
+                Encontrá libros, consultá nuestro catálogo
+                y disfrutá de una biblioteca accesible
+                desde cualquier lugar. 
+            </p>
+
+            <a href="#generos" class="boton">Ver catalogo</a>
+        </div>
+
+        <a href="#generos" class="flecha" aria-label="Ver géneros">
+            ↓
+        </a>
+
+    </section>
+
+
+    <!-- GÉNEROS DE LIBROS -->
+    <section class="generos" id="generos">
+
+        <div class="encabezado-generos">
+            <span class="subtitulo">EXPLORÁ NUESTRO CATÁLOGO</span>
+            <h2>Un mundo de historias</h2>
+            <p>
+                Elegí tu género favorito y encontrá tu próxima lectura.
+            </p>
+        </div>
+
+        <div class="contenedor-generos">
+
+            <a href="paginas/libreria.html?genero=romance"
+               class="tarjeta romance">
+                <div class="numero">01</div>
+                <div class="info-tarjeta">
+                    <h3>Romance</h3>
+                    <p>Historias de amor, encuentros y despedidas.</p>
+                    <span>Explorar género ↗</span>
+                </div>
+            </a>
+
+            <a href="paginas/libreria.html?genero=misterio"
+               class="tarjeta misterio">
+                <div class="numero">02</div>
+                <div class="info-tarjeta">
+                    <h3>Misterio</h3>
+                    <p>Secretos por descubrir y enigmas por resolver.</p>
+                    <span>Explorar género ↗</span>
+                </div>
+            </a>
+
+            <a href="paginas/libreria.html?genero=ciencia-ficcion"
+               class="tarjeta ciencia-ficcion">
+                <div class="numero">03</div>
+                <div class="info-tarjeta">
+                    <h3>Ciencia ficción</h3>
+                    <p>Otros mundos, futuros posibles y nuevas realidades.</p>
+                    <span>Explorar género ↗</span>
+                </div>
+            </a>
+
+        </div>
+
+        <a href="#inicio" class="volver">↑ Volver al inicio</a>
+
+    </section>
+
+</body>
+</html>
