@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo | Dream Library</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7ed;
+    color: #285f60;
+}
+
+header {
+    background: #203b3d;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b9d6c2;
+}
+
+.contenedor {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.presentacion {
+    text-align: center;
+    padding: 65px 15px 35px;
+}
+
+.presentacion h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.presentacion p {
+    color: #607979;
+    font-size: 17px;
+}
+
+.generos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 30px 0 55px;
+}
+
+.genero {
+    background: #285f60;
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.genero:hover {
+    background: #203b3d;
+    transform: translateY(-3px);
+}
+
+.seccion {
+    padding: 45px 0;
+    scroll-margin-top: 20px;
+}
+
+.seccion h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #a6c4ad;
+    padding-bottom: 12px;
+}
+
+.descripcion {
+    margin-bottom: 25px;
+    color: #607979;
+}
+
+.libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.libro {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    border-left: 5px solid #6c9990;
+    transition: .2s;
+}
+
+.libro:hover {
+    transform: translateY(-4px);
+}
+
+.libro h3 {
+    color: #285f60;
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.autor {
+    font-weight: bold;
+    color: #78958a;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.sinopsis {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 25px;
+    color: #285f60;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #203b3d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .presentacion h1 {
+        font-size: 29px;
+    }
+
+    .contenedor {
+        width: 92%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="../index.html" class="logo">Dream Library</a>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#generos">Catálogo</a>
+        <a href="socios.html">Socios</a>
+        <a href="administracion.html">Administración</a>
+    </nav>
+</header>
+
+<main class="contenedor">
+
+<section class="presentacion" id="generos">
+    <h1>Nuestro catálogo</h1>
+    <p>Descubrí nuevas historias y encontrá tu próxima lectura favorita.</p>
+</section>
+
+<div class="generos">
+    <a href="#romance" class="genero">Romance</a>
+    <a href="#misterio" class="genero">Misterio</a>
+    <a href="#ciencia-ficcion" class="genero">Ciencia ficción</a>
+</div>
+
+<!-- ROMANCE -->
+
+<section class="seccion" id="romance">
+
+<h2>Libros de romance</h2>
+<p class="descripcion">
+Historias de amor, encuentros, emociones y nuevos comienzos.
+</p>
+
+<div class="libros">
+
+<article class="libro">
+<h3>Orgullo y prejuicio</h3>
+<p class="autor">Jane Austen</p>
+<p class="sinopsis">Elizabeth Bennet y Fitzwilliam Darcy deberán superar sus primeras impresiones y los prejuicios de su entorno.</p>
+</article>
+
+<article class="libro">
+<h3>Emma</h3>
+<p class="autor">Jane Austen</p>
+<p class="sinopsis">Una joven inteligente y entrometida juega a ser casamentera, aunque no siempre comprende sus propios sentimientos.</p>
+</article>
+
+<article class="libro">
+<h3>Jane Eyre</h3>
+<p class="autor">Charlotte Brontë</p>
+<p class="sinopsis">Una institutriz busca construir una vida independiente mientras descubre un amor lleno de secretos.</p>
+</article>
+
+<article class="libro">
+<h3>Mujercitas</h3>
+<p class="autor">Louisa May Alcott</p>
+<p class="sinopsis">Las hermanas March crecen, sueñan y atraviesan juntas los desafíos de la familia y el amor.</p>
+</article>
+
+<article class="libro">
+<h3>Persuasión</h3>
+<p class="autor">Jane Austen</p>
+<p class="sinopsis">Anne Elliot vuelve a encontrarse con un antiguo amor y debe decidir si escucha a su corazón.</p>
+</article>
+
+<article class="libro">
+<h3>Como agua para chocolate</h3>
+<p class="autor">Laura Esquivel</p>
+<p class="sinopsis">La cocina se convierte en el lenguaje de Tita para expresar sentimientos en una familia de tradiciones estrictas.</p>
+</article>
+
+<article class="libro">
+<h3>Yo antes de ti</h3>
+<p class="autor">Jojo Moyes</p>
+<p class="sinopsis">Louisa comienza a trabajar cuidando a Will y ambos transforman la manera en que ven el mundo.</p>
+</article>
+
+<article class="libro">
+<h3>Bajo la misma estrella</h3>
+<p class="autor">John Green</p>
+<p class="sinopsis">Hazel y Augustus se conocen en un grupo de apoyo y comparten una historia marcada por el humor y la esperanza.</p>
+</article>
+
+<article class="libro">
+<h3>A todos los chicos de los que me enamoré</h3>
+<p class="autor">Jenny Han</p>
+<p class="sinopsis">La vida de Lara Jean cambia cuando unas cartas privadas que escribió para sus antiguos amores llegan a sus destinatarios.</p>
+</article>
+
+<article class="libro">
+<h3>Eleanor y Park</h3>
+<p class="autor">Rainbow Rowell</p>
+<p class="sinopsis">Dos adolescentes muy diferentes conectan gracias a la música, los cómics y las pequeñas cosas cotidianas.</p>
+</article>
+
+<article class="libro">
+<h3>Aristóteles y Dante descubren los secretos del universo</h3>
+<p class="autor">Benjamin Alire Sáenz</p>
+<p class="sinopsis">Dos chicos forman una amistad profunda mientras exploran su identidad, sus familias y sus emociones.</p>
+</article>
+
+<article class="libro">
+<h3>Todo lo que nunca fuimos</h3>
+<p class="autor">Alice Kellen</p>
+<p class="sinopsis">Leah y Axel deben aprender a convivir con los cambios y con sentimientos que no esperaban.</p>
+</article>
+
+<article class="libro">
+<h3>El mapa de los anhelos</h3>
+<p class="autor">Alice Kellen</p>
+<p class="sinopsis">Una joven recibe un juego creado para ayudarla a descubrir deseos, recuerdos y nuevas posibilidades.</p>
+</article>
+
+<article class="libro">
+<h3>Un cuento perfecto</h3>
+<p class="autor">Elísabet Benavent</p>
+<p class="sinopsis">Margot y David tienen vidas muy distintas, pero un encuentro inesperado los lleva a replantearse sus decisiones.</p>
+</article>
+
+<article class="libro">
+<h3>Boulevard</h3>
+<p class="autor">Flor M. Salvador</p>
+<p class="sinopsis">Hasley y Luke se conocen en una etapa complicada y construyen un vínculo que los cambia.</p>
+</article>
+
+<article class="libro">
+<h3>Antes de diciembre</h3>
+<p class="autor">Joana Marcús</p>
+<p class="sinopsis">Jenna se muda para estudiar y acuerda una relación a distancia, pero nuevas experiencias ponen todo en duda.</p>
+</article>
+
+<article class="libro">
+<h3>Gente que conocemos en vacaciones</h3>
+<p class="autor">Emily Henry</p>
+<p class="sinopsis">Poppy y Alex son amigos y compañeros de vacaciones; un viaje puede cambiar su relación.</p>
+</article>
+
+<article class="libro">
+<h3>La hipótesis del amor</h3>
+<p class="autor">Ali Hazelwood</p>
+<p class="sinopsis">Una estudiante y un profesor acuerdan fingir una relación, pero el plan se vuelve más complejo.</p>
+</article>
+
+<article class="libro">
+<h3>Rojo, blanco y sangre azul</h3>
+<p class="autor">Casey McQuiston</p>
+<p class="sinopsis">El hijo de la presidenta estadounidense y un príncipe británico pasan de la rivalidad a una relación inesperada.</p>
+</article>
+
+<article class="libro">
+<h3>Heartstopper: Dos chicos juntos</h3>
+<p class="autor">Alice Oseman</p>
+<p class="sinopsis">Charlie y Nick se hacen amigos en la escuela y descubren poco a poco lo que sienten el uno por el otro.</p>
+</article>
+
+</div>
+<a href="#generos" class="volver">↑ Volver a los géneros</a>
+</section>
+
+<!-- MISTERIO -->
+
+<section class="seccion" id="misterio">
+
+<h2>Libros de misterio</h2>
+<p class="descripcion">
+Crímenes, pistas ocultas y enigmas que te invitan a investigar.
+</p>
+
+<div class="libros">
+
+<article class="libro">
+<h3>Estudio en escarlata</h3>
+<p class="autor">Arthur Conan Doyle</p>
+<p class="sinopsis">Sherlock Holmes y el doctor Watson investigan un extraño asesinato en Londres.</p>
+</article>
+
+<article class="libro">
+<h3>El sabueso de los Baskerville</h3>
+<p class="autor">Arthur Conan Doyle</p>
+<p class="sinopsis">Holmes investiga una leyenda familiar que parece estar relacionada con una muerte misteriosa.</p>
+</article>
+
+<article class="libro">
+<h3>Asesinato en el Orient Express</h3>
+<p class="autor">Agatha Christie</p>
+<p class="sinopsis">Durante un viaje en tren, Hércules Poirot debe descubrir quién cometió un asesinato entre los pasajeros.</p>
+</article>
+
+<article class="libro">
+<h3>Y no quedó ninguno</h3>
+<p class="autor">Agatha Christie</p>
+<p class="sinopsis">Diez desconocidos llegan a una isla y comienzan a ocurrir hechos que siguen una inquietante rima.</p>
+</article>
+
+<article class="libro">
+<h3>Muerte en el Nilo</h3>
+<p class="autor">Agatha Christie</p>
+<p class="sinopsis">Un viaje por Egipto se convierte en una investigación cuando una pasajera aparece asesinada.</p>
+</article>
+
+<article class="libro">
+<h3>El asesinato de Roger Ackroyd</h3>
+<p class="autor">Agatha Christie</p>
+<p class="sinopsis">Poirot se retira a un pueblo tranquilo, pero un crimen inesperado lo devuelve a la investigación.</p>
+</article>
+
+<article class="libro">
+<h3>Un cadáver en la biblioteca</h3>
+<p class="autor">Agatha Christie</p>
+<p class="sinopsis">La aparición de un cuerpo en una biblioteca desconcierta a una familia y moviliza a Miss Marple.</p>
+</article>
+
+<article class="libro">
+<h3>El misterio del cuarto amarillo</h3>
+<p class="autor">Gaston Leroux</p>
+<p class="sinopsis">Un periodista intenta explicar cómo alguien pudo atacar a una mujer en una habitación cerrada.</p>
+</article>
+
+<article class="libro">
+<h3>El nombre de la rosa</h3>
+<p class="autor">Umberto Eco</p>
+<p class="sinopsis">En una abadía medieval, una serie de muertes lleva a investigar una biblioteca llena de secretos.</p>
+</article>
+
+<article class="libro">
+<h3>La chica del tren</h3>
+<p class="autor">Paula Hawkins</p>
+<p class="sinopsis">Una mujer que viaja diariamente en tren cree haber visto algo importante relacionado con una desaparición.</p>
+</article>
+
+<article class="libro">
+<h3>La verdad sobre el caso Harry Quebert</h3>
+<p class="autor">Joël Dicker</p>
+<p class="sinopsis">Un escritor investiga la desaparición de una joven ocurrida décadas atrás en un pequeño pueblo.</p>
+</article>
+
+<article class="libro">
+<h3>El psicoanalista</h3>
+<p class="autor">John Katzenbach</p>
+<p class="sinopsis">Un especialista recibe un mensaje anónimo que lo obliga a descubrir quién lo amenaza y por qué.</p>
+</article>
+
+<article class="libro">
+<h3>La paciente silenciosa</h3>
+<p class="autor">Alex Michaelides</p>
+<p class="sinopsis">Una pintora deja de hablar después de un crimen y un psicoterapeuta intenta comprender su silencio.</p>
+</article>
+
+<article class="libro">
+<h3>Los hombres que no amaban a las mujeres</h3>
+<p class="autor">Stieg Larsson</p>
+<p class="sinopsis">Un periodista y una investigadora trabajan juntos para resolver la desaparición de una joven.</p>
+</article>
+
+<article class="libro">
+<h3>El club del crimen de los jueves</h3>
+<p class="autor">Richard Osman</p>
+<p class="sinopsis">Cuatro jubilados aficionados a los casos sin resolver se encuentran frente a un crimen real.</p>
+</article>
+
+<article class="libro">
+<h3>El halcón maltés</h3>
+<p class="autor">Dashiell Hammett</p>
+<p class="sinopsis">Un detective privado se ve envuelto en una búsqueda peligrosa por una valiosa estatuilla.</p>
+</article>
+
+<article class="libro">
+<h3>La sombra del viento</h3>
+<p class="autor">Carlos Ruiz Zafón</p>
+<p class="sinopsis">Un joven encuentra un libro olvidado y comienza a investigar la misteriosa vida de su autor.</p>
+</article>
+
+<article class="libro">
+<h3>El silencio de la ciudad blanca</h3>
+<p class="autor">Eva García Sáenz de Urturi</p>
+<p class="sinopsis">Un investigador vuelve a trabajar cuando una serie de crímenes parece repetir un patrón antiguo.</p>
+</article>
+
+<article class="libro">
+<h3>La pareja de al lado</h3>
+<p class="autor">Shari Lapena</p>
+<p class="sinopsis">Una pareja descubre que su bebé ha desaparecido mientras estaba al cuidado de sus vecinos.</p>
+</article>
+
+<article class="libro">
+<h3>La desaparición de Stephanie Mailer</h3>
+<p class="autor">Joël Dicker</p>
+<p class="sinopsis">Una periodista afirma que una investigación policial del pasado tuvo un error y luego desaparece.</p>
+</article>
+
+</div>
+<a href="#generos" class="volver">↑ Volver a los géneros</a>
+</section>
+
+<!-- CIENCIA FICCION -->
+
+<section class="seccion" id="ciencia-ficcion">
+
+<h2>Libros de ciencia ficción</h2>
+<p class="descripcion">
+Explorá futuros posibles, tecnología, viajes espaciales y otros mundos.
+</p>
+
+<div class="libros">
+
+<article class="libro">
+<h3>Dune</h3>
+<p class="autor">Frank Herbert</p>
+<p class="sinopsis">En el planeta desértico Arrakis, distintas familias luchan por el control de un recurso muy valioso.</p>
+</article>
+
+<article class="libro">
+<h3>1984</h3>
+<p class="autor">George Orwell</p>
+<p class="sinopsis">En una sociedad vigilada, Winston Smith empieza a cuestionar el poder que controla cada aspecto de la vida.</p>
+</article>
+
+<article class="libro">
+<h3>Fahrenheit 451</h3>
+<p class="autor">Ray Bradbury</p>
+<p class="sinopsis">En un futuro donde los libros están prohibidos, un bombero comienza a preguntarse por qué debe destruirlos.</p>
+</article>
+
+<article class="libro">
+<h3>Un mundo feliz</h3>
+<p class="autor">Aldous Huxley</p>
+<p class="sinopsis">Una sociedad futurista mantiene el orden mediante el control tecnológico y la producción de sus habitantes.</p>
+</article>
+
+<article class="libro">
+<h3>Fundación</h3>
+<p class="autor">Isaac Asimov</p>
+<p class="sinopsis">Un científico desarrolla un plan para preservar el conocimiento durante la caída de un gran imperio galáctico.</p>
+</article>
+
+<article class="libro">
+<h3>Yo, robot</h3>
+<p class="autor">Isaac Asimov</p>
+<p class="sinopsis">Una colección de relatos explora cómo las personas conviven con robots y las reglas que guían su comportamiento.</p>
+</article>
+
+<article class="libro">
+<h3>El juego de Ender</h3>
+<p class="autor">Orson Scott Card</p>
+<p class="sinopsis">Un niño es entrenado en una escuela espacial para enfrentar una posible amenaza extraterrestre.</p>
+</article>
+
+<article class="libro">
+<h3>El marciano</h3>
+<p class="autor">Andy Weir</p>
+<p class="sinopsis">Un astronauta queda aislado en Marte y debe usar sus conocimientos para sobrevivir y comunicarse con la Tierra.</p>
+</article>
+
+<article class="libro">
+<h3>Proyecto Hail Mary</h3>
+<p class="autor">Andy Weir</p>
+<p class="sinopsis">Un hombre despierta solo en una nave espacial y debe descubrir por qué está allí y cómo salvar a la humanidad.</p>
+</article>
+
+<article class="libro">
+<h3>Ready Player One</h3>
+<p class="autor">Ernest Cline</p>
+<p class="sinopsis">En un futuro dominado por un mundo virtual, un joven participa en una búsqueda llena de acertijos.</p>
+</article>
+
+<article class="libro">
+<h3>Los juegos del hambre</h3>
+<p class="autor">Suzanne Collins</p>
+<p class="sinopsis">En una nación dividida en distritos, Katniss debe participar en un evento televisado que pone a prueba su ingenio.</p>
+</article>
+
+<article class="libro">
+<h3>La máquina del tiempo</h3>
+<p class="autor">H. G. Wells</p>
+<p class="sinopsis">Un inventor viaja a un futuro lejano y descubre cómo ha cambiado la humanidad.</p>
+</article>
+
+<article class="libro">
+<h3>La guerra de los mundos</h3>
+<p class="autor">H. G. Wells</p>
+<p class="sinopsis">La llegada de seres de otro planeta altera la vida en la Tierra y pone a prueba a la humanidad.</p>
+</article>
+
+<article class="libro">
+<h3>Frankenstein</h3>
+<p class="autor">Mary Shelley</p>
+<p class="sinopsis">Un científico crea vida mediante un experimento y debe afrontar las consecuencias de su descubrimiento.</p>
+</article>
+
+<article class="libro">
+<h3>¿Sueñan los androides con ovejas eléctricas?</h3>
+<p class="autor">Philip K. Dick</p>
+<p class="sinopsis">En una Tierra deteriorada, un cazador de androides se enfrenta a preguntas sobre la identidad y la humanidad.</p>
+</article>
+
+<article class="libro">
+<h3>Neuromante</h3>
+<p class="autor">William Gibson</p>
+<p class="sinopsis">Un hacker recibe una misión en un mundo futurista conectado por redes informáticas.</p>
+</article>
+
+<article class="libro">
+<h3>La mano izquierda de la oscuridad</h3>
+<p class="autor">Ursula K. Le Guin</p>
+<p class="sinopsis">Un enviado llega a un planeta cuyas sociedades desafían sus ideas sobre la cultura y la identidad.</p>
+</article>
+
+<article class="libro">
+<h3>Guía del autoestopista galáctico</h3>
+<p class="autor">Douglas Adams</p>
+<p class="sinopsis">Tras la destrucción de la Tierra, un hombre emprende un viaje espacial lleno de situaciones absurdas.</p>
+</article>
+
+<article class="libro">
+<h3>El problema de los tres cuerpos</h3>
+<p class="autor">Cixin Liu</p>
+<p class="sinopsis">Una serie de descubrimientos científicos conecta a la humanidad con una civilización extraterrestre.</p>
+</article>
+
+<article class="libro">
+<h3>La invención de Morel</h3>
+<p class="autor">Adolfo Bioy Casares</p>
+<p class="sinopsis">Un fugitivo llega a una isla aparentemente desierta y presencia fenómenos que desafían la realidad.</p>
+</article>
+
+</div>
+<a href="#generos" class="volver">↑ Volver a los géneros</a>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Dream Library - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
